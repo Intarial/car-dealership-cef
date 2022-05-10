@@ -1,0 +1,61 @@
+.wrapper {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  justify-content: center;
+  width: 100vw;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5.208vw;
+    min-height: 40vh;
+    align-items: center;
+  }
+}
+
+.effectScale {
+  transition: .3s;
+  display: flex;
+  flex-direction: column;
+  margin-right: 3.167vw;
+
+  &:hover {
+    transform: scale(1.1);
+
+    .wrapperCard {
+      box-shadow: 0vw 0.208vw 1.406vw rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  .wrapperCard {
+    width: 13.542vw;
+    height: 11.979vw;
+    transform:matrix(1.00,0.00,-0.40,1.00,-1,0);
+    background-color: #C4C4C4;
+    border-radius: 1.042vw;
+    transition: .3s;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    box-shadow: 0vw 0.208vw 1.406vw rgba(0, 0, 0, 0.15);
+
+    .carImage {
+      transform:matrix(1.00,0.00,0.40,1.00,-1,0);
+      height: 8.854vw;
+    }
+  }
+
+  .nameCar {
+    margin-top: 0.260vw;
+    width: 9.375vw;
+    text-align: center;
+  }
+}

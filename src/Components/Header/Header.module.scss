@@ -1,0 +1,22 @@
+.wrapper {
+  padding: 1.042vw;
+  padding-bottom: 0;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.wrapperLogo {
+  align-items: center;
+  display: flex;
+}
+
+.wrapperClose {
+  display: flex;
+  align-items: center;
+  transition: .3s;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
